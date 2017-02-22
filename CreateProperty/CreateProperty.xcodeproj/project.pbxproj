@@ -18,6 +18,7 @@
 		6604D5721E447667000E86D3 /* NSObject+Property.m in Sources */ = {isa = PBXBuildFile; fileRef = 6604D5711E447667000E86D3 /* NSObject+Property.m */; };
 		6604D5741E447706000E86D3 /* status.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6604D5731E447706000E86D3 /* status.plist */; };
 		6604D5761E44778F000E86D3 /* Zhihu.json in Resources */ = {isa = PBXBuildFile; fileRef = 6604D5751E44778F000E86D3 /* Zhihu.json */; };
+		6604D57B1E447E98000E86D3 /* Zhihu2.json in Resources */ = {isa = PBXBuildFile; fileRef = 6604D57A1E447E98000E86D3 /* Zhihu2.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 		6604D5711E447667000E86D3 /* NSObject+Property.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Property.m"; sourceTree = "<group>"; };
 		6604D5731E447706000E86D3 /* status.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = status.plist; sourceTree = "<group>"; };
 		6604D5751E44778F000E86D3 /* Zhihu.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Zhihu.json; sourceTree = "<group>"; };
+		6604D57A1E447E98000E86D3 /* Zhihu2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Zhihu2.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +128,7 @@
 		6604D53C1E447601000E86D3 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				6604D57A1E447E98000E86D3 /* Zhihu2.json */,
 				6604D5751E44778F000E86D3 /* Zhihu.json */,
 				6604D5731E447706000E86D3 /* status.plist */,
 				6604D53D1E447601000E86D3 /* main.m */,
@@ -258,6 +261,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6604D54C1E447601000E86D3 /* LaunchScreen.storyboard in Resources */,
+				6604D57B1E447E98000E86D3 /* Zhihu2.json in Resources */,
 				6604D5491E447601000E86D3 /* Assets.xcassets in Resources */,
 				6604D5761E44778F000E86D3 /* Zhihu.json in Resources */,
 				6604D5741E447706000E86D3 /* status.plist in Resources */,
@@ -519,6 +523,7 @@
 				6604D5681E447601000E86D3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6604D5691E447601000E86D3 /* Build configuration list for PBXNativeTarget "CreatePropertyTests" */ = {
 			isa = XCConfigurationList;
@@ -527,6 +532,7 @@
 				6604D56B1E447601000E86D3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6604D56C1E447601000E86D3 /* Build configuration list for PBXNativeTarget "CreatePropertyUITests" */ = {
 			isa = XCConfigurationList;
@@ -535,6 +541,7 @@
 				6604D56E1E447601000E86D3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

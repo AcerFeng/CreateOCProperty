@@ -19,18 +19,30 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
+   
+    [self createWithPlistFile];
+    
+    
+    
+    [self createWithJsonFile];
+
+}
+
+- (void)createWithPlistFile {
     NSString *filePath = [[NSBundle mainBundle] pathForResource:@"status.plist" ofType:nil];
     NSDictionary *dict = [NSDictionary dictionaryWithContentsOfFile:filePath];
     NSArray *dictArr = dict[@"statuses"];
     // 设计模型属性代码
     [NSObject createPropertyCodeWithDict:dictArr[0][@"user"]];
-    
-    NSString *jsonFilePath = [[NSBundle mainBundle] pathForResource:@"Zhihu.json" ofType:nil];
+}
+
+- (void)createWithJsonFile {
+    NSString *jsonFilePath = [[NSBundle mainBundle] pathForResource:@"Zhihu2.json" ofType:nil];
     NSDictionary *jsonDict = [NSJSONSerialization JSONObjectWithData:[NSData dataWithContentsOfFile:jsonFilePath] options:NSJSONReadingMutableContainers error:nil];
-//    NSLog(@"%@", jsonDict);
+    //    NSLog(@"%@", jsonDict);
     
-    [NSObject createPropertyCodeWithDict:jsonDict];
-    [NSObject createPropertyCodeWithDict:jsonDict[@"stories"][0]];
+    //    [NSObject createPropertyCodeWithDict:jsonDict];
+//    [NSObject createPropertyCodeWithDict:jsonDict[@"top_stories"][0]];
 }
 
 
